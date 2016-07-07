@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="10117" systemVersion="15F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="TreasureBoxCollectionViewCell" id="gTV-IL-0wX" customClass="TreasureBoxCollectionViewCell" customModule="TreasureBoxApp" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="172" height="172"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="172" height="172"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="nAu-jP-tK5">
+                        <rect key="frame" x="0.0" y="0.0" width="172" height="172"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="q4w-J8-eei">
+                                <rect key="frame" x="-30" y="-30" width="232" height="232"/>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="q4w-J8-eei" firstAttribute="top" secondItem="nAu-jP-tK5" secondAttribute="top" constant="-30" id="1Xl-dE-EZO"/>
+                            <constraint firstAttribute="trailing" secondItem="q4w-J8-eei" secondAttribute="trailing" constant="-30" id="8Zr-j6-QIM"/>
+                            <constraint firstItem="q4w-J8-eei" firstAttribute="leading" secondItem="nAu-jP-tK5" secondAttribute="leading" constant="-30" id="hoK-CZ-h89"/>
+                            <constraint firstAttribute="bottom" secondItem="q4w-J8-eei" secondAttribute="bottom" constant="-30" id="qbp-0D-dTe"/>
+                        </constraints>
+                    </view>
+                </subviews>
+                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+            </view>
+            <constraints>
+                <constraint firstItem="nAu-jP-tK5" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="Pm7-Ic-Z89"/>
+                <constraint firstAttribute="trailing" secondItem="nAu-jP-tK5" secondAttribute="trailing" id="ZpE-8r-Dzs"/>
+                <constraint firstItem="nAu-jP-tK5" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="gsc-G6-Wg1"/>
+                <constraint firstAttribute="bottom" secondItem="nAu-jP-tK5" secondAttribute="bottom" id="jAs-Ya-Xjv"/>
+            </constraints>
+            <size key="customSize" width="172" height="172"/>
+            <connections>
+                <outlet property="cellImageView" destination="q4w-J8-eei" id="Yrf-xe-CkC"/>
+            </connections>
+            <point key="canvasLocation" x="287" y="404"/>
+        </collectionViewCell>
+    </objects>
+</document>
